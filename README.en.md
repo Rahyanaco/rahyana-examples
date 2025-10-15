@@ -1,13 +1,37 @@
 [EN] English | [FA](./README.md)
 
-# Rahyana AI Examples Hub ✨
+# Rahyana Examples Hub ✨
 
-Welcome to the official hub for Rahyana AI example repositories. This repo links to language-specific examples so you can start fast and pick the best path for your stack.
+Welcome to the official hub for Rahyana example repositories. This repo links to language-specific examples so you can start fast and pick the best path for your stack.
 
 ## 🚀 Quick start
 - Production API: `https://rahyana.ir/api/v1`
 - Local testing: set `API_KEY_OVERRIDE` and `BASE_URL_OVERRIDE`
 - Popular models: `openai/gpt-5`, `openai/gpt-4o`
+
+## 📎 Common API notes
+- **Base URL**: `https://rahyana.ir/api/v1`
+- **Auth**: header `Authorization: Bearer YOUR_API_KEY`
+- **Models**: list with `GET /api/v1/models`
+- **Errors**: response contains `error.message`, `error.type`, `error.code`; provider detail may appear in header `X-Provider-Error`.
+
+<details>
+<summary>Sample requests (cURL)</summary>
+
+```bash
+curl -s -H "Authorization: Bearer $API_KEY" \
+     "https://rahyana.ir/api/v1/models"
+
+curl -s -X POST "https://rahyana.ir/api/v1/chat/completions" \
+     -H "Authorization: Bearer $API_KEY" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "model": "openai/gpt-4o",
+       "messages": [{"role":"user","content":"hello"}]
+     }'
+```
+
+</details>
 
 ## 📚 Language repos
 - JavaScript: coming soon
