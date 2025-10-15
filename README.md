@@ -1,5 +1,7 @@
 # Rahyana AI Examples Hub
 
+[EN] English | [FA](./README.fa.md)
+
 Central hub for language-specific example repositories.
 
 - JavaScript: link pending
