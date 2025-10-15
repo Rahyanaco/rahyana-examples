@@ -13,13 +13,15 @@
 - **قالب خطا**: شیء <code>error</code> شامل <code>message</code>، <code>type</code>، <code>code</code> و در برخی موارد هدر <code><span dir="ltr">X-Provider-Error</span></code>.
 - **تست محلی**: از متغیرهای محیطی <code><span dir="ltr">API_KEY_OVERRIDE</span></code> و <code><span dir="ltr">BASE_URL_OVERRIDE</span></code> استفاده کنید.
 
-<details>
-<summary>نمونه درخواست‌ها (cURL)</summary>
+### 🧪 نمونه درخواست (cURL) — فهرست مدل‌ها
 
 ```bash
 curl -s -H "Authorization: Bearer $API_KEY" \
      "https://rahyana.ir/api/v1/models"
+```
 
+### 🧪 نمونه درخواست (cURL) — چت کامپلشن
+```bash
 curl -s -X POST "https://rahyana.ir/api/v1/chat/completions" \
      -H "Authorization: Bearer $API_KEY" \
      -H "Content-Type: application/json" \
@@ -29,7 +31,13 @@ curl -s -X POST "https://rahyana.ir/api/v1/chat/completions" \
      }'
 ```
 
-</details>
+## 🤝 سازگاری با OpenAI
+- «مسیرها» و «ساختار بدنه/پاسخ» با استاندارد OpenAI سازگار است؛ می‌توانید بسیاری از کلاینت‌های OpenAI را با تغییر **آدرس پایه** و **کلید** استفاده کنید.
+- برای حالت‌های خاص (مانند تصویر/صوت/PDF یا ابزارها)، راهیانا نگاشت‌های سازگار فراهم کرده است.
+
+## 🧠 مستندات تکمیلی
+- مدل‌ها: `docs/models.fa.md` (و نسخه انگلیسی `docs/models.en.md`)
+- چت کامپلشن: `docs/chat-completions.fa.md` (و نسخه انگلیسی `docs/chat-completions.en.md`)
 
 ## 📚 مخازن زبان‌ها
 - JavaScript: به‌زودی اضافه می‌شود
