@@ -1,17 +1,19 @@
-# Rahyana AI Examples Hub
+[FA] فارسی | [EN](./README.en.md)
 
-[EN] English | [FA](./README.fa.md)
+# هاب مثال‌های Rahyana AI
 
-Central hub for language-specific example repositories.
+[FA] فارسی | [EN](./README.md)
 
-- JavaScript: link pending
-- TypeScript: link pending
-- Python: link pending
+مرکز لینک‌دهی به مخازن مثال‌های زبان‌های مختلف.
 
-## What’s inside
-- Links to language repos
-- High-level quick start and supported models
-- SEO-friendly docs
+- جاوااسکریپت: در حال تکمیل
+- تایپ‌اسکریپت: در حال تکمیل
+- پایتون: در حال تکمیل
 
-## Contributing
-See CONTRIBUTING.md. Please open Issues for bugs and Discussions for proposals.
+## شامل
+- لینک به مخازن زبان‌ها
+- شروع سریع و مدل‌های پشتیبانی‌شده
+- مستندات مناسب SEO
+
+## مشارکت
+به CONTRIBUTING.md مراجعه کنید. برای باگ‌ها Issue و برای پیشنهادها Discussion باز کنید.
