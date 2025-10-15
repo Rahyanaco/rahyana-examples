@@ -4,16 +4,12 @@
 
 Welcome to the official hub for Rahyana example repositories. This repo links to language-specific examples so you can start fast and pick the best path for your stack.
 
-## 🚀 Quick start
-- Production API: `https://rahyana.ir/api/v1`
-- Local testing: set `API_KEY_OVERRIDE` and `BASE_URL_OVERRIDE`
-- Popular models: `openai/gpt-5`, `openai/gpt-4o`
-
 ## 📎 Common API notes
 - **Base URL**: `https://rahyana.ir/api/v1`
 - **Auth**: header `Authorization: Bearer YOUR_API_KEY`
 - **Models**: list with `GET /api/v1/models`
 - **Errors**: response contains `error.message`, `error.type`, `error.code`; provider detail may appear in header `X-Provider-Error`.
+- **Local testing**: set `API_KEY_OVERRIDE` and `BASE_URL_OVERRIDE`
 
 <details>
 <summary>Sample requests (cURL)</summary>
